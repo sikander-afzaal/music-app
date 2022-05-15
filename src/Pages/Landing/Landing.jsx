@@ -3,10 +3,14 @@ import "./Landing.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import LandingHeader from "../../Layout/Landing-Header/Landing-Header";
+import feature1 from "../../Assets/landing-page/feature1.svg";
+import feature2 from "../../Assets/landing-page/feature2.svg";
+import Trending from "../../Components/Trending-Artists/Trending";
 function Landing() {
   return (
     <div className="landing">
       <LandingHeader />
+      {/* hero section landing page --------------------- */}
       <div className="landing__hero">
         <div className="hero-container flex">
           <div className="hero-cont__top-cont flex">
@@ -44,7 +48,43 @@ function Landing() {
           <li className="bubbles"></li>
         </ul>
       </div>
-      <div className="feats"></div>
+      {/* end hero section landing page --------------------- */}
+
+      {/* features section landing page --------------------- */}
+      <div className="feats flex">
+        <div className="feat-row flex">
+          <img src={feature1} alt="" />
+          <div className="text-feature flex">
+            <h2 className="feature-h2">Listen Music Everywhere, Anytime</h2>
+            <p className="feature-p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div className="feat-row flex">
+          <div className="text-feature flex">
+            <h2 className="feature-h2">
+              Create Playlists with any song, On-The-Go
+            </h2>
+            <p className="feature-p">
+              Second Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,
+              2
+            </p>
+          </div>
+          <img src={feature2} alt="" />
+        </div>
+      </div>
+      {/* end features section landing page --------------------- */}
+      <div className="trend-cont flex">
+        <div className="trending flex">
+          <h1>Top Trending Artists</h1>
+          <div className="trending-row flex">
+            <Trending />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

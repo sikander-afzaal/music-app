@@ -9,13 +9,13 @@
   position: relative;
 }
 .landing__hero::before,
-.landing__hero::after {
+.landing__hero::after,
+.creators-cont::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
-
   left: 0;
 }
 .landing__hero::before {
@@ -301,4 +301,128 @@
   gap: 30px;
   width: 100%;
   flex-wrap: wrap;
+}
+/* creatorss section ------------------------------------ */
+.creators-cont {
+  width: 100%;
+  position: relative;
+  padding: 4rem 2rem;
+  background-color: #f98f1d;
+}
+.creators-cont::before {
+  background-image: url("../../Assets/landing-page/tape.jpg");
+  opacity: 0.2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 43%;
+  z-index: 1;
+}
+.creators {
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  max-width: 1240px;
+  width: 100%;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+.top-creator {
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 6px;
+}
+.top-creator h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+.top-creator p {
+  font-size: 1.1rem;
+  max-width: 500px;
+  font-weight: 400;
+}
+.create-row {
+  gap: 15px;
+  width: fit-content;
+}
+.create-row h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.create-svg {
+  background-color: inherit;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  padding: 11px;
+  transition: all 0.24s ease-in-out;
+}
+.create-row:hover .create-svg {
+  color: #f98f1d;
+  background-color: white;
+}
+@media screen and (max-width: 415px) {
+  .creators h1 {
+    font-size: 1.8rem;
+  }
+}
+/* rock section ----------------------------------- */
+.rock-cont {
+  background-color: #171719;
+  width: 100%;
+  padding: 4rem 2rem;
+}
+.rock {
+  flex-direction: column;
+  width: 100%;
+  max-width: 1240px;
+  gap: 40px;
+}
+.rock h1 {
+  color: rgb(210, 210, 210);
+  font-size: 2.5rem;
+  text-align: center;
+}
+.btn-div-rock {
+  gap: 20px;
+}
+.btn-div-rock p {
+  font-size: 1.1rem;
+  color: rgb(210, 210, 210);
+  font-weight: 500;
+}
+.btn-div-rock button {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #f98f1d;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.rock-register {
+  background-color: #f98f1d;
+  color: white;
+}
+.rock-login {
+  color: #f98f1d;
+  background-color: transparent;
+}
+.rock-login:hover {
+  color: white;
+  background-color: #f98f1d;
+}
+@media screen and (max-width: 544px) {
+  .rock h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .rock h1 {
+    font-size: 1.6rem;
+  }
 }

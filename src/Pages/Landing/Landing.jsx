@@ -6,6 +6,7 @@ import LandingHeader from "../../Layout/Landing-Header/Landing-Header";
 import feature1 from "../../Assets/landing-page/feature1.svg";
 import feature2 from "../../Assets/landing-page/feature2.svg";
 import Trending from "../../Components/Trending-Artists/Trending";
+import LandFooter from "../../Layout/Landing-Footer/Landing-Footer";
 function Landing() {
   return (
     <div className="landing">
@@ -77,6 +78,7 @@ function Landing() {
         </div>
       </div>
       {/* end features section landing page --------------------- */}
+      {/* trending section landing page --------------------- */}
       <div className="trend-cont flex">
         <div className="trending flex">
           <h1>Top Trending Artists</h1>
@@ -85,6 +87,75 @@ function Landing() {
           </div>
         </div>
       </div>
+      {/* end trending section landing page --------------------- */}
+      {/* creators section landing page --------------------- */}
+      <div className="creators-cont flex">
+        <div className="creators flex">
+          <div className="top-creator flex">
+            <h1>Calling all creators</h1>
+            <p>
+              Get on newyauk to connect with fans, share your sounds, and grow
+              your audience.
+            </p>
+          </div>
+
+          <div className="create-row flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              datareactid="1231"
+              className="create-svg"
+            >
+              <polyline points="16 16 12 12 8 16"></polyline>
+              <line x1="12" y1="12" x2="12" y2="21"></line>
+              <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+              <polyline points="16 16 12 12 8 16"></polyline>
+            </svg>
+            <h2>Upload Songs</h2>
+          </div>
+          <div className="create-row flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+              className="create-svg"
+            >
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>
+            <h2>Check Stats</h2>
+          </div>
+        </div>
+      </div>
+      {/*end creators section landing page --------------------- */}
+      {/* rock section landing page --------------------- */}
+      <div className="rock-cont flex">
+        <div className="rock flex">
+          <h1>Ready to rock your world.</h1>
+          <div className="btn-div-rock flex">
+            <button className="rock-register">Register</button>
+            <p>OR</p>
+            <button className="rock-login">Login</button>
+          </div>
+        </div>
+      </div>
+      {/*end rock section landing page --------------------- */}
+      <LandFooter />
     </div>
   );
 }
